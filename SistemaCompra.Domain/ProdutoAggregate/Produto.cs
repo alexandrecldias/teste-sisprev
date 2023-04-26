@@ -21,7 +21,7 @@ namespace SistemaCompra.Domain.ProdutoAggregate
             Id = Guid.NewGuid();
             Nome = nome ?? throw new ArgumentNullException(nameof(nome));
             Descricao = descricao ?? throw new ArgumentNullException(nameof(descricao));
-            Preco = new Money(preco);
+            //Preco = new Money(preco);
             Categoria = (Categoria) Enum.Parse(typeof(Categoria), categoria);
             Situacao = Situacao.Ativo;
         }
